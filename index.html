@@ -1,10 +1,293 @@
-<html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>UAV-HiRAP</title>
+<link href="static/home/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/home/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="static/home/home.ico" type="image/x-icon">
+<link rel="icon" href="static/home/home.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="static/home/home.css">
+<style>
+header.masthead {
+    background-image: url("static/home/index.jpg");
+}
+</style>
+</head>
 
 <body>
 
-<h1>服务器更新中</h1>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="{{ url_for('main.index">Home</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<p>将于9月19日上线</p>
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading text-uppercase">Welcome To <br> UAV-HiRAP!</div>
+      <div class="intro-lead-in">This is an open-source, web-based platform provides services for UAV flight route design and image analysis</div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="developing.html">To App Page</a>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Services</h2>
+        <h3 class="section-subheading text-muted">主要包括：无人机航线规划、图像分析、中国沙地基础地理信息数据库和长期定位观测样地720度全景.</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <img src="static/home/logo_route.png" alt="route_design" width="150px" height="150px">
+        <h4 class="service-heading">Route Design</h4>
+        <p class="text-muted">给定样地顶点坐标和无人机飞行参数设置，生成满足拼图要求的最佳航线规划，并支持导出为litchi
+          飞控配置文件。</p>
+      </div>
+      <div class="col-md-3">
+
+        <img src="static/home/logo_dtc.png" alt="route_design" width="150px" height="150px">
+
+        <h4 class="service-heading">Image Analysis</h4>
+        <p class="text-muted">基于决策树分类算法，通过提交满足要求的训练集，实现无人机影像像素的自动分类。</p>
+      </div>
+      <div class="col-md-3">
+        <img src="static/home/logo_db.png" alt="route_design" width="200px" height="150px">
+        <h4 class="service-heading">China Dryland Database</h4>
+        <p class="text-muted">提供中国沙地基础地理信息数据库服务。</p>
+      </div>
+      <div class="col-md-3">
+        <img src="static/home/logo_pano.png" alt="route_design" width="150px" height="150px">
+        <h4 class="service-heading">Site Panorama View</h4>
+        <p class="text-muted">长期定位观测样地(内蒙古浑善达克沙地)720度全景图浏览功能。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">News</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="static/news/20190715.png" alt="publish", style="height:100%!important;">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2019.7.13</h4>
+                <h4 class="subheading">课题组完成浑善达克大样地观测仪器安装与无人机观测</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">7月13—16日，中国科学院地理科学与资源研究所段涛博士与乌日娜、韩东、姬婕、李晓雅、工程师共7人前往浑善达克沙地榆树疏林长期定位观测大样地调试涡度、荧光观测设备，同时开展了样地植被无人机观测。期间，大家与段涛博士交流了无人机影像处理过程中的疑难点，段博士结合研究经验提出了一些改进的建议。16日，王锋陪同中国林科院荒漠化所白建华书记及正蓝旗林业局朱景新局长共同了解了样地观测工作与植被恢复状况，随后考察了位于正蓝旗的乌和尔沁林场，探讨了将来建设浑善达克沙地榆树疏林长期定位观测研究站事宜。</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="static/news/20190625.png" alt="publish", style="height:100%!important;">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2019.6.23</h4>
+                <h4 class="subheading">课题组赴浑善达克大样地安装观测设备并完成无人机观测</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">6月23日­—26日，乌日娜、李晓雅、韩东和仪器公司的工程师一行六人驱车至内蒙古正蓝旗浑善达克榆树疏林大样地进行无人机观测与实验仪器安装，顺利采集了样地影像数据、安装了荧光-通量-气象要素协同观测设备。</p>
+              </div>
+            </div>
+          </li>
+          <li>
+              <div class="timeline-image">
+                <!-- the picture is not match with the content-->
+                <img class="rounded-circle img-fluid" src="static/news/20190606.png" alt="fig2" style="height:100%!important;">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2019.6.16</h4>
+                  <h4 class="subheading">硕士研究生韩东顺利完成学位论文答辩</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">6月6日，硕士研究生韩东参加了林科院荒漠化所2016级硕士毕业答辩，他以“基于无人机和机器学习算法的榆树疏林草原植被动态研究”为题，报告了硕士研究生期间在浑善达克沙地榆树疏林草原大样地开展的研究工作,顺利通过答辩。</p>
+                </div>
+              </div>
+            </li>
+          <li class="timeline-inverted">
+            <a href="news.html" target="_blank">
+            <div class="timeline-image">
+              <h4>•<br>•<br>•</h4>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Our Team</h2>
+        <h3 class="section-subheading text-muted">See <a href="about_us.html" target="_blank">all team members</a> in UAV-HiRAP Lab</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="static/about_us/WF.png" alt="">
+          <h4>WANG Feng</h4>
+          <p class="text-muted">Project leader</p>
+          <a class="btn bg-dark text-white" href="about_us.html#WF" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="static/about_us/WHZ.png" alt="">
+          <h4>WANG Haozhou</h4>
+          <p class="text-muted">Web designer</p>
+          <a class="btn bg-dark text-white" href="about_us.html#WHZ" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="static/about_us/JJ.png" alt="">
+          <h4>JI Jie</h4>
+          <p class="text-muted">Art designer</p>
+          <a class="btn bg-dark text-white" href="about_us.html#JJ" target="_blank">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">UAV-HiRAP Lab is a research group under the Institute of Desertification Studies at
+          Chinese Academy of Forestry (CAF-IDS). It is dedicated to applying latest technology such as artificial
+          intelligence (AI) and unmanned aerial vehicles (UAV) in desertification management. We offer Masters, Ph.D and
+          co-op opportunities and welcome any consultation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-light" id="publications">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Publications</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Papers</h3>
+        <ol>
+		  <li>Haozhou Wang, Dong Han, Yue Mu, Lina Jiang, Xueling Yao, Yongfei Bai, Qi Lu, Feng Wang*. 2019. Landscape-level vegetation classification and fractional woody and herbaceous vegetation cover estimation over the dryland ecosystems by unmanned aerial vehicle platform. Agricultural and Forest Meteorology, 278: 107665<a href="https://doi.org/10.1016/j.agrformet.2019.107665" target="_blank"> DOI: 10.1016/j.agrformet.2019.107665</a></li>
+		  <li>Feng Wang*, Xubin Pan, Cynthia Gerlein-Safdi, Cao Xiaoming, Wang Sen, Gu Lianhong, Wang Dongfang, Qi Lu*. 2019. Ecological restoration in Northern China: a contrasted picture. Land Degradation & development. <a href="https://doi.org/10.1002/ldr.3314" target="_blank"> DOI: 10.1002/ldr.3314</a></li>
+		  <li>王锋*，卢琦. 2019. 沙地樟子松散生单木的天然更新幼苗空间分布模型. 林业科学. </li>
+		  <li>吴隐，韩东，姚雪玲，张静，王锋*. 2019. 基于无人机高分辨率航空影像的榆树疏林空间分布格局及其地形效应. 热带地理. 39(4)</li>
+          <li>Wu Rina, Cong Weiwei, LI Yonghua, LI Siyao, WANG Dongfang, Jia Zhiqing*, Wang Feng*. 2019. The Scientific Conceptual Framework for Ecological Quality of the Dryland Ecosystem: Concepts, Indicators, Monitoring and Assessment. Journal of Resources and Ecology, 10(2): 196-201.<a href="" target="_blank">DOI: 10.5814/j.issn.1674-764x.2019.02.010</a></li>
+          <li>Wang Shouqiang, Wang Junbang, Zhang Leiming, Xiao Zhishu, Wang Feng, Sun Nan, Li Daiqing, Chen Bin, Chen Jinghua, Li Yue, Wang Xiaobo, Wang Miaomiao. 2019 A National Key R&D Program: Technologies and and Guidelines for Monitoring Ecological Quality of terrestrial ecosystems in China. Journal of Resources and Ecology. 2019, 10(2): 105-111.</li>
+          <li>韩东，王浩舟，郑邦友，王锋*. 2018. 基于无人机和机器学习算法的榆树疏林草原植被分类和覆盖度动态估计.生态学报.38(18): 6655⁃ 6663</li>
+          <li>Yue Mu, Feng Wang*, Bangyou Zheng, Wei Guo, Yiming Feng*. 2018. A rapid image-based method to determine the morphological characteristics of gravels on desert pavement. Geomorphology. 304, 89–98. <a href="https://doi.org/10.1016/j.geomorph.2017.12.027" target="_blank">DOI: 10.1016/j.geomorph.2017.12.027</a></li>
+          <li>穆悦,冯益明,高翔,韩东,吴隐,张谱. 2018. 基于无人机图像的戈壁表面砾石特征变化研究[J].林业科学研究, 31(2):55-62</li>
+          <li>Feng Wang*. 2017. Artificial intelligence in research: UAV and artificial intelligence. Science. 357: 28-29. <a href="https://doi.org/10.1126/science.357.6346.28" target="_blank">DOI: 10.1126/science.357.6346.28</a></li>
+        </ol>
+      </div>
+
+      <div class="col-lg-12">
+        <h3>Conference</h3>
+        <ol>
+          <li>王锋. 2018. 大数据在精准治沙工程评价、管理和政策中的应用与挑战.  三北工程精准治沙技术与管理培训班. 中国内蒙古阿拉善左旗。9月19日</li>
+          <li>韩东，王浩舟，王锋*. 2018. 基于无人机和机器学习算法的榆树疏林草原植被分类和覆盖度动态估计. 第17届中国生态学大会，生态遥感与应用分会. 中国南京，5月4-6日，（学术报告） </li>
+          <li>Feng Wang. 2017. How to apply unmanned aerial vehicle and artificial intelligence to monitor ecological plots in dryland ecosystem. The workshop of monitoring techniques of observation stations in China Terrestrial Ecological Research Network. Nanning, China, 13-15 December. (Oral)</li>
+          <li>Feng Wang. 2017. The study on vegetation and landforms classification coupled unmanned aerial vehicle and artificial intelligence. The Congress of China Physical Geography. Nanjing, China, 20-22 November. (Oral)</li>
+          <li>Haozhou Wang, Feng Wang*, Xueling Yao, Yue Mu, Yongfei Bai*, Qi Lu*. 2017. UAV-HiRAP: A novel method to improve landscape-level vegetation classification and coverage fraction estimation with unmanned aerial vehicle platform. The 12th International Congress of Ecological (INTECOL). Beijing, China, August 21-25.(Oral).</li>
+          <li>Wang Feng. 2016. Near-ground remote sensing of ecology and environment monitoring: application and perspective. Lecture. Chinese Agriculture University. Beijing, China, 16 December.（Oral）</li>
+          <li>Mu Yue, Wang Feng*, Zheng Bangyou, Feng Yiming*. 2016. The gravel coverage and size of Gobi desert analyzed by a rapid image-based method[C]. IUFRO Regional Congress for Asia and Oceania 2016, Beijing, China, 24-27 October(Poster)</li>
+          <li>Wu Yin, Zhang Jing, Yao Xueling, Guo Binbin, Wang Feng*. 2016. A novel spatially explicit model for sparse forest pattern based on digital terrain data. IUFRO Regional Congress for Asia and Oceania 2016, Beijing, China, 24-27 October.(Poster)</li>
+          <li>Wang Feng. 2016. UAV: the application in the ecological monitoring. Lecture. Chinese Academy of Inspection and Quarantine. Beijing, China, 16 August.(oral)</li>
+        </ol>
+      </div>
+
+      <div class="col-lg-12">
+        <h3>Software copyrights</h3>
+        <ol>
+		  <li>无人机高精度影像分析平台[简称: UAV-HiRAP] v3.0 2019. 软著登字第2019SR0286422</li>
+		  <li>中国沙地基础地理信息数据平台[简称：GIP-DLC] v2.0 2018. 软著登字第2018SR921265</li>
+          <li>无人机高精度影像分析平台[简称: UAV-HiRAP] v2.0 2017. 软著登字第2017SR558256</li>
+          <li>无人机高精度影像分析平台[简称: UAV-HPIAP] v1.0 2016. 软著登字第2016SR198498</li>
+		  <li>中国沙地基础地理信息web系统. 2016. 软著登字第2016SR036010</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright © CAF-IDS 2018</span>
+      </div>
+      <div class="col-md-4">
+        <span class="copyright">Powered by <a href="https://getbootstrap.com">Bootstrap4</a></span>
+      </div>
+      <div class="col-md-4">
+        <span class="copyright"><a href="#" class="js-scroll-trigger">Back to top</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="static/home/vendor/jquery/jquery.min.js"></script>
+<script src="static/home/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/home/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="static/home/home.js"></script>
 
 </body>
 
